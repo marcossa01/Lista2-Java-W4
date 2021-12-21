@@ -1,0 +1,13 @@
+import Domain.Produto;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Produto[] produtos = new Produto()[3];
+		
+		
+
+	}
+
+}

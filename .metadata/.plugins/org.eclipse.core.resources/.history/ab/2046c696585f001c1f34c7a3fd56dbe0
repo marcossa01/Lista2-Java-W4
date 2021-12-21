@@ -1,0 +1,64 @@
+package Domain;
+
+import java.util.Date;
+
+import Interfaces.CrescimentoAnual;
+
+public class Empresa implements CrescimentoAnual {
+	
+	String nome;
+	Date date;
+	 valorEmpresa;
+	Integer crescimentoAnual;
+	
+	public Empresa() {
+		
+	}
+	
+	public Empresa(String nome, Date date, Double valorEmpresa, Integer crescimentoAnual) {
+		this.nome = nome;
+		this.date = date;
+		this.valorEmpresa = valorEmpresa;
+		this.crescimentoAnual = crescimentoAnual;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	public Double getValorEmpresa() {
+		return valorEmpresa;
+	}
+
+	public void setValorEmpresa(Double valorEmpresa) {
+		this.valorEmpresa = valorEmpresa;
+	}
+
+	public Integer getCrescimentoAnual() {
+		return crescimentoAnual;
+	}
+
+	public void setCrescimentoAnual(Integer crescimentoAnual) {
+		this.crescimentoAnual = crescimentoAnual;
+	}
+
+	@Override
+	public Double CrescimentoAnual() {
+		Double crescimento = ((valorEmpresa * crescimentoAnual) / 100);
+		valorEmpresa += crescimento;
+		return crescimento;
+	}
+
+}

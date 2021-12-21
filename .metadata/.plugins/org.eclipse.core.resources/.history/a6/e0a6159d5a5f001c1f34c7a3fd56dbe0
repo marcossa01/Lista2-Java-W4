@@ -1,0 +1,29 @@
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
+import Domain.Empresa;
+
+public class Program {
+	
+	public static void main(String[] args) throws ParseException {
+		
+		Empresa e1 = new Empresa("Empresa 1", "21/01/2021", 1130000.00, 148);
+		Empresa e2 = new Empresa("Empresa 2", "01/01/2021", 184000000.00, 32);
+		
+		Integer anos = 0;
+		
+		while(e1.getValorEmpresa() < e2.getValorEmpresa()) {
+			e1.CrescimentoEmpresa();
+			e2.CrescimentoEmpresa();
+			anos++;
+		}
+		
+		System.out.println("Valor Empresa 1: " + e1.getValorEmpresa());
+		System.out.println("Valor Empresa 2: " + e2.getValorEmpresa());
+		
+		System.out.println("Quantidade de anos: " = anos);
+		
+		
+	}
+
+}

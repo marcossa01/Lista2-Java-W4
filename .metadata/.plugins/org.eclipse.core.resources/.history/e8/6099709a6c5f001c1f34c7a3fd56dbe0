@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+import Domain.Produto;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		Produto[] produtos = new Produto[3];
+		
+		String nome;
+		Double preco;
+		Integer quantidade;
+		Double valorTotal = 0.0;
+		
+		for (int i = 0; i < produtos.length; i++) {
+			
+		}
+	}
+
+}

@@ -1,0 +1,19 @@
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
+import Domain.Empresa;
+
+public class Program {
+	
+	public static void main(String[] args) throws ParseException {
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/aaaa");
+		
+		Empresa e1 = new Empresa("Empresa 1", sdf.parse("01/01/2021"), (double) 1130000, 148);
+		
+		System.out.println(e1.toString());
+		
+		
+	}
+
+}

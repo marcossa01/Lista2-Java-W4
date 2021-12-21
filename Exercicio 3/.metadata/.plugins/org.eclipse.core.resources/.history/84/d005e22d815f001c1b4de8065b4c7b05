@@ -1,0 +1,31 @@
+public class RadixSort {
+	
+	public static void radixSort (int iArr[]) {
+		
+	
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		int iArr[] = {16223, 898, 13, 906, 235, 23, 9, 1532, 6388, 2501, 8};
+		String[] array = new String[iArr.length];
+		
+		for (int i = 0; i < array.length; i++) {
+			array[i] = Integer.toString(iArr[i]);
+			System.out.println(array[i]);
+		}
+		
+		
+		System.out.println(iArr.length);
+		
+		radixSort(iArr);
+		
+		for (int i : iArr) {
+			System.out.println(i + " ");
+		}
+		
+	}
+
+}

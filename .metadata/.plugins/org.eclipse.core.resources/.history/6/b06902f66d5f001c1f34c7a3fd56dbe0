@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+import Domain.Produto;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		Produto[] produtos = new Produto[3];
+		double valorTotal = 0;
+		
+		for(int i = 1; i <= produtos.length; i++) {
+			String nome;
+			Double preco;
+			Integer quantidade;
+			
+			System.out.println("Digite o nome: ");
+			nome = sc.nextLine();
+			System.out.println("Digite o preço: ");
+			preco = sc.nextDouble();
+			System.out.println("Digite a quantidade: ");
+			quantidade = sc.nextInt();
+			System.out.println();
+			
+			valorTotal = quantidade * preco;
+			
+			produtos[i] = new Produto(nome, preco, quantidade);
+			
+		}
+		
+		System.out.println("Valor Total da compra: " + valorTotal);
+		
+		sc.close();
+	}
+
+}

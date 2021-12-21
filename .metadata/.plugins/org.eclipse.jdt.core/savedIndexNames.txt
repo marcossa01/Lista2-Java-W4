@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+/Users/masa/eclipse-workspace/Lista 2/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+3098666208.index
+3484865654.index
+565753178.index
+12845994.index

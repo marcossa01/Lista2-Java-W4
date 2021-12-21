@@ -1,0 +1,43 @@
+public class RadixSort {
+	
+	//public static void radixSort (int iArr[]) {
+		
+	
+		
+		
+	//}
+	
+	public static String completeToLeft(String value, char c, int size) {
+		String result = value;
+		
+		while ( result.length() < size ) {
+			result = c + result;
+		}
+		
+		return result;
+	}
+	
+	public static void main(String[] args) {
+		
+		int iArr[] = {16223, 898, 13, 906, 235, 23, 9, 1532, 6388, 2501, 8};
+		String[] array = new String[iArr.length];
+		
+		for (int i = 0; i < array.length; i++) {
+			array[i] = Integer.toString(iArr[i]);
+			
+			System.out.println(completeToLeft(array[i], '0', 5));
+			
+		}
+		
+		System.out.println(array.toString());
+		
+		
+		//radixSort(iArr);
+		
+	    //for (int i : iArr) {
+		//System.out.println(i + " ");
+		}
+		
+	}
+
+//}
